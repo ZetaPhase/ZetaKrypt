@@ -3,7 +3,7 @@ Web based encrypter and decrypter for any type of file built using R and R Shiny
 
 ### Quick Start for Developers
 
-## Required Libraries:
+#### Required Libraries:
 - R Shiny
 - Digest
 
