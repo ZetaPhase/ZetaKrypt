@@ -5,7 +5,9 @@ For developers who would like to further develop this project:
 Required Libraries:
 
 1. First go to the lower right hand packages tile and install the shiny packages
-2. You're Ready
+2. Dowload Package Digest
+3. Include these in your server.R as library(package)
+4. You're Ready
 
 (c) 2016 ZetaPhase Technologies Inc, All Rights Reserved.
 - Licensed under GPLV3
