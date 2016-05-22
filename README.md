@@ -5,6 +5,7 @@ Web based encrypter and decrypter for any type of file built using R and R Shiny
 
 ## Required Libraries:
 - R Shiny
+- Digest
 
 (c) 2016 ZetaPhase Technologies Inc, All Rights Reserved.
 - Licensed under GPLV3
