@@ -1,5 +1,7 @@
 ZetaKrypt
 
+ZetaKrypt is a web-based encrypter and decrypter.
+
 For developers who would like to further develop this project:
 
 Required Libraries:
