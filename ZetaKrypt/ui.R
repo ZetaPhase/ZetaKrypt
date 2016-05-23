@@ -13,6 +13,15 @@ library(shiny)
 shinyUI(
   navbarPage("ZetaKrypt",
              theme="bootstrap.css",
+             tabPanel(
+               "Home",
+               sidebarLayout(
+                 tags$img(src="https://raw.githubusercontent.com/ZetaPhase/ZetaKrypt/master/ZetaKrypt/img/ZetaKrypt-logo.png", width="256", height="256"),
+                 mainPanel(
+                   h3(tags$p("Welcome to ZetaKrypt."))
+                 )
+               )
+             ),
              tabPanel("Encrypt"),
              tabPanel("Decrypt"))
 )
