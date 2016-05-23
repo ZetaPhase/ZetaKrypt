@@ -18,7 +18,13 @@ shinyUI(
                sidebarLayout(
                  tags$img(src="https://raw.githubusercontent.com/ZetaPhase/ZetaKrypt/master/ZetaKrypt/img/ZetaKrypt-logo.png", width="256", height="256"),
                  mainPanel(
-                   h3(tags$p("Welcome to ZetaKrypt."))
+                   h3(tags$p("Welcome to ZetaKrypt.")),
+                   htmlOutput("home"),
+                   h3(tags$p("Links")),
+                   tags$br(),
+                   tags$a(href="https://github.com/ZetaPhase/ZetaKrypt", "Visit the GitHub Repo"),
+                   tags$br(),
+                   tags$a(href="https://zetaphase.io/", "Visit our main site page")
                  )
                )
              ),
