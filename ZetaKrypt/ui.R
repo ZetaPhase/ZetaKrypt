@@ -28,6 +28,15 @@ shinyUI(
                  )
                )
              ),
-             tabPanel("Encrypt"),
-             tabPanel("Decrypt"))
-)
+             tabPanel(
+               "Encrypt",
+               tags$textarea(id="foo", rows=18, cols=55, "Decrypted Text"),
+               tags$textarea(id="foo", rows=18, cols=55, "Encrypted Text")
+               
+             ),
+             tabPanel(
+               "Decrypt",
+               tags$textarea(id="foo", rows=18, cols=55, "Encrypted Text"),
+               tags$textarea(id="foo", rows=18, cols=55, "Decrypted Text")
+             )
+))
