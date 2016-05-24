@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(PKI)
 
 # Define UI for application that draws a histogram
 shinyUI(
@@ -32,7 +33,7 @@ shinyUI(
                "Encrypt",
                tags$textarea(id="InEncrypt", rows=18, cols=55, "Decrypted Text"),
                tags$textarea(id="OutEncrypt", rows=18, cols=55, "Encrypted Text"),
-               textInput("encryptKey", label=NULL, value="", width="200px", placeholder="Encryption key")
+               textInput("encryptKey", label=NULL, value="", width="200px", placeholder="Encryption key.")
              ),
              tabPanel(
                "Decrypt",
