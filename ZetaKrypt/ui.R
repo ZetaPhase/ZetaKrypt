@@ -33,7 +33,9 @@ shinyUI(
                "Encrypt",
                tags$textarea(id="InEncrypt", rows=18, cols=55, "Decrypted Text"),
                tags$textarea(id="OutEncrypt", rows=18, cols=55, "Encrypted Text"),
-               textInput("encryptKey", label=NULL, value="", width="200px", placeholder="Encryption key.")
+               tags$br(),
+               textInput("encryptKey", label=NULL, value="", width="200px", placeholder="Encryption key."),
+               actionButton("encryptBtn", "Encrypt")
              ),
              tabPanel(
                "Decrypt",
