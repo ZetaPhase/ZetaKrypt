@@ -30,13 +30,13 @@ shinyUI(
              ),
              tabPanel(
                "Encrypt",
-               tags$textarea(id="foo", rows=18, cols=55, "Decrypted Text"),
-               tags$textarea(id="foo", rows=18, cols=55, "Encrypted Text")
-               
+               tags$textarea(id="InEncrypt", rows=18, cols=55, "Decrypted Text"),
+               tags$textarea(id="OutEncrypt", rows=18, cols=55, "Encrypted Text"),
+               textInput("encryptKey", label=NULL, value="", width="200px", placeholder="Encryption key")
              ),
              tabPanel(
                "Decrypt",
-               tags$textarea(id="foo", rows=18, cols=55, "Encrypted Text"),
-               tags$textarea(id="foo", rows=18, cols=55, "Decrypted Text")
+               tags$textarea(id="InDecrypt", rows=18, cols=55, "Encrypted Text"),
+               tags$textarea(id="OutDecrypt", rows=18, cols=55, "Decrypted Text")
              )
 ))
