@@ -21,6 +21,10 @@ shinyServer(function(input, output) {
     HTML(paste(str1, str2, str3, sep='<br/>'))
   })
   
+  encrypt <- eventReactive(input$encryptBtn, {
+    
+  })
+  
   output$distPlot <- renderPlot({
     
     # generate bins based on input$bins from ui.R
